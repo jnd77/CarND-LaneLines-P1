@@ -20,11 +20,12 @@ The goals / steps of this project are the following:
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps:
-    1. Convert the image to grayscale
-    2. Use a Gaussian blur
-    3. Use the Canny method to extract the edges
-    4. Mask the edges falling out of a region of interest
-    5. Extract the lines with the Hough transformation
+
+1. Convert the image to grayscale
+2. Use a Gaussian blur
+3. Use the Canny method to extract the edges
+4. Mask the edges falling out of a region of interest
+5. Extract the lines with the Hough transformation
   
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function.
 For each segment, I compute its slope and intercept.
